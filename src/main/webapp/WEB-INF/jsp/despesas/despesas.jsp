@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,7 +43,7 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
@@ -56,7 +56,7 @@
             
         </div>
 
-        <button title="Editar" id="btnAdicionarDespesa" onclick="" class="btn btn-success mb-3"  type="button">
+        <button title="Editar" id="btnAdicionarDespesa" onclick="window.location.href='formdespesa'" class="btn btn-success mb-3"  type="button">
           <i class="fa fa-plus"></i> 
           Nova Despesa 
       </button>
@@ -67,16 +67,16 @@
             <th>Data de Pagamento</th>
             <th>Data de Pagamento Esperado</th>
             <th>Tipo da Despesa</th>
-            <th>InstituiÃ§Ã£o Financeira</th>
+            <th>Instituição Financeira</th>
             <th>Conta a Debitar</th>
-            <th>AÃ§Ãµes</th>
+            <th>Ações</th>
           </tr>
 
           <tr>
             <td>R$ 839,23</td>
             <td></td>
             <td>10/02/2022</td>
-            <td>EducaÃ§Ã£o</td>
+            <td>Educação</td>
             <td>Nubank</td>
             <td>Conta Corrente</td>
             <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>

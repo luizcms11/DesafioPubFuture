@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,14 +43,14 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
   </div>
-  
-<!-- formproduto-->
-<section class="page-section" id="formproduto">
+ 
+<!-- formdespesa-->
+<section class="page-section" id="formdespesa">
   <div class="container">
       <div class="text-center">
           <h2 class="section-heading text-uppercase">Nova Despesa/Editar Despesa</h2>
@@ -77,12 +77,12 @@
                 <div class="form-group">
                   <h6 style="margin-bottom:0px">Tipo de Despesa:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
-                    <option>AlimentaÃ§Ã£o</option>
-                    <option>EducaÃ§Ã£o</option>
+                    <option>Alimentação</option>
+                    <option>Educação</option>
                     <option>Lazer</option>
                     <option>Moradia</option>
                     <option>Roupa</option>
-                    <option>SaÃºde</option>
+                    <option>Saúde</option>
                     <option>Transporte</option>
                     <option>Outros</option>
                   </select>
@@ -90,9 +90,9 @@
                 </div>
 
                 <div class="form-group">
-                  <h6 style="margin-bottom:0px">InstituiÃ§Ã£o Financeira e Conta a Debitar:</h6>
+                  <h6 style="margin-bottom:0px">Instituição Financeira e Conta a Debitar:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
-                    <option>ItaÃº</option>
+                    <option>Itaú</option>
                     <option>Bradesco</option>
                     <option>Santander</option>
                     <option>Nubank</option>
@@ -102,12 +102,12 @@
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
-                    <option>PoupanÃ§a</option>
+                    <option>Poupança</option>
                   </select>
                   <p class="help-block text-danger"></p>
                 </div>
                  
-                  <button class="botÃ£o salvar" >Salvar</button>
+                  <button class="botão salvar" >Salvar</button>
               </div> 
           </div>
       </form>

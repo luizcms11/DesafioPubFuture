@@ -5,13 +5,13 @@
       http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0">
 	
-	<persistence-unit name="default">
+	<persistence-unit name="antigo">
 		<provider>org.hibernate.ejb.HibernatePersistence</provider>
 		<properties>
 			<property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:dankidb"/>
-			<property name="javax.persistence.jdbc.user" value="root" />
-			<property name="javax.persistence.jdbc.password" value="" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:mem:pubdb"/>
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="1234" />
 			
 			<property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
 			<property name="hibernate.show_sql" value="false" />
@@ -20,16 +20,16 @@
 		</properties>
 	</persistence-unit>
 	
-	<persistence-unit name="postgres" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 
         <!-- Implementação do JPA, no nosso caso Hibernate -->
 
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" /> <!-- DB Driver -->
-            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/danki" /> <!-- 167.114.67.6 -->
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost/pubdb1" /> <!-- 167.114.67.6 -->
             <property name="javax.persistence.jdbc.user" value="postgres" /> <!-- DB User -->
-            <property name="javax.persistence.jdbc.password" value="postgres" /> <!-- DB Password -->
+            <property name="javax.persistence.jdbc.password" value="1234" /> <!-- DB Password -->
 
 	    	<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/> <!-- DB Dialect -->
             <property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
@@ -41,7 +41,7 @@
             <property name="hibernate.connection.provider_class" value="org.hibernate.c3p0.internal.C3P0ConnectionProvider"/>
 			<property name="hibernate.c3p0.min_size" value="2" />
 			<property name="hibernate.c3p0.max_size" value="2" />
-			<property name="hibernate.c3p0.timeout" value="180" />
+			<property name="hibernate.c3p0.timeout" value="120" />
         </properties>
 	</persistence-unit>
 	

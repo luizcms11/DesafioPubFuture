@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,17 +43,18 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
   </div>
+ 
   
-<!-- formproduto-->
+<!-- formtransferencia-->
 <section class="page-section" id="formTransferencia">
   <div class="container">
       <div class="text-center">
-          <h2 class="section-heading text-uppercase">TransferÃªncia entre Contas</h2>
+          <h2 class="section-heading text-uppercase">Transferência entre Contas</h2>
           
       </div>
       <form>
@@ -61,14 +62,14 @@
               <div class="col-md-12 align-self-center text-center">
                   
                 <div class="form-group input-login mx-auto">
-                    <h6 style="margin-bottom:0px">Valor da TransferÃªncia:</h6>
-                    <input class="form-control money" id="valor" type="tel" placeholder="Valor em R$*" required="required" data-validation-required-message="Digite o Valor da TransferÃªncia." />                            
+                    <h6 style="margin-bottom:0px">Valor da Transferência:</h6>
+                    <input class="form-control money" id="valor" type="tel" placeholder="Valor em R$*" required="required" data-validation-required-message="Digite o Valor da Transferência." />                            
                     <p class="help-block text-danger"></p>
                 </div>
                 
                 <div class="form-group">
-                  <h6 style="margin-bottom:0px">InstituiÃ§Ã£o Financeira:</h6>
-                  <input class="form-control" id="instituicaoFin"  placeholder="Nome da InstituiÃ§Ã£o Financeira*" required="required" data-validation-required-message="Digite a InstituiÃ§Ã£o Financeira." />
+                  <h6 style="margin-bottom:0px">Instituição Financeira:</h6>
+                  <input class="form-control" id="instituicaoFin"  placeholder="Nome da Instituição Financeira*" required="required" data-validation-required-message="Digite a Instituição Financeira." />
                   <p class="help-block text-danger"></p>
             
                 </div>
@@ -78,7 +79,7 @@
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
-                    <option>PoupanÃ§a</option>
+                    <option>Poupança</option>
                     
                   </select>
                   <p class="help-block text-danger"></p>

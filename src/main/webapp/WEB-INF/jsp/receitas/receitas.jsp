@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,7 +43,7 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
@@ -56,7 +56,7 @@
             
         </div>
 
-        <button title="Editar" id="btnAdicionarReceita" onclick="" class="btn btn-success mb-3"  type="button">
+        <button title="Editar" id="btnAdicionarReceita" onclick="window.location.href='formreceita'" class="btn btn-success mb-3"  type="button">
           <i class="fa fa-plus"></i> 
           Nova Receita 
       </button>
@@ -66,11 +66,11 @@
             <th>Valor</th>
             <th>Data de Recebimento</th>
             <th>Data de Recebimento Esperado</th>
-            <th>DescriÃ§Ã£o</th>
-            <th>InstituiÃ§Ã£o Financeira</th>
+            <th>Descrição</th>
+            <th>Instituição Financeira</th>
             <th>Conta a Receber</th>
             <th>Tipo de Receita</th>
-            <th>AÃ§Ãµes</th>
+            <th>Ações</th>
           </tr>
 
           <tr>
@@ -78,7 +78,7 @@
             <td></td>
             <td>10/02/2022</td>
             <td>Reembolso de despesas</td>
-            <td>ItaÃº</td>
+            <td>Itaú</td>
             <td>Conta Corrente</td>
             <td>Outros</td>
             <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>

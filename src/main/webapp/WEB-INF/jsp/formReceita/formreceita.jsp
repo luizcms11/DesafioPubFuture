@@ -2,7 +2,7 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,13 +43,15 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
   </div>
-<!-- formproduto-->
-<section class="page-section" id="formproduto">
+ 
+  
+<!-- formreceita-->
+<section class="page-section" id="formreceita">
   <div class="container">
       <div class="text-center">
           <h2 class="section-heading text-uppercase">Nova Receita/Editar Receita</h2>
@@ -75,12 +77,12 @@
                   </div>
                 <div class="form-group input-login mx-auto">
                     <textarea class="form-control" placeholder="Descreva a Receita"></textarea>
-                    </textarea>
+                    
                     <p class="help-block text-danger"></p>
                 </div>
 
                 <div class="form-group">
-                  <h6 style="margin-bottom:0px">InstituiÃ§Ã£o Financeira e Conta a Receber:</h6>
+                  <h6 style="margin-bottom:0px">Instituição Financeira e Conta a Receber:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>ItaÃº</option>
                     <option>Bradesco</option>
@@ -92,16 +94,16 @@
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
-                    <option>PoupanÃ§a</option>
+                    <option>Poupança</option>
                   </select>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
                   <h6 style="margin-bottom:0px">Tipo de Receita:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
-                    <option>SalÃ¡rio</option>
+                    <option>Salário</option>
                     <option>Presente</option>
-                    <option>PrÃªmio</option>
+                    <option>Prêmio</option>
                     <option>Outros</option>
                   </select>
                   <p class="help-block text-danger"></p>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - FinanÃ§as</title>
+  <title>PubFuture - Finanças</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
@@ -43,13 +43,13 @@
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - FinanÃ§as</h1>
+      <h1>PubFuture - Finanças</h1>
     </div>
     <div class="top-right-side">
     </div>
   </div>
-  
-<!-- formproduto-->
+ 
+<!-- formconta-->
 <section class="page-section" id="formConta">
   <div class="container">
       <div class="text-center">
@@ -67,8 +67,8 @@
                 </div>
                 
                 <div class="form-group">
-                  <h6 style="margin-bottom:0px">InstituiÃ§Ã£o Financeira:</h6>
-                  <input class="form-control" id="instituicaoFin"  placeholder="Nome da InstituiÃ§Ã£o Financeira*" required="required" data-validation-required-message="Digite a InstituiÃ§Ã£o Financeira." />
+                  <h6 style="margin-bottom:0px">Instituição Financeira:</h6>
+                  <input class="form-control" id="instituicaoFin"  placeholder="Nome da Instituição Financeira*" required="required" data-validation-required-message="Digite a InstituiÃ§Ã£o Financeira." />
                   <p class="help-block text-danger"></p>
 
                   
@@ -79,14 +79,14 @@
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
-                    <option>PoupanÃ§a</option>
+                    <option>Poupança</option>
                     
                   </select>
                   <p class="help-block text-danger"></p>
                 </div>
 
                  
-                  <button class="botÃ£o salvar" >Salvar</button>
+                  <button class="botão salvar" >Salvar</button>
               </div> 
           </div>
       </form>
