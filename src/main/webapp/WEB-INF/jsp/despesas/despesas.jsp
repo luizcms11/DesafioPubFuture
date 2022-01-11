@@ -1,49 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib tagdir="/WEB-INF/tags/" prefix="tag" %>
+
+
 <!DOCTYPE html>
 <html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - Finanças</title>
+  <title>PubFuture - FinanÃ§as</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="lateral-nav">
-  <div class="lateral-top-nav">
-    <div class="user-info">
-      <div class="user-pic">
-        <div class="round-img">
-          <img src="https://avatars.githubusercontent.com/u/34714882?v=4">
-        </div>
-      </div>
-      <div class="user-desc">
-        <div class="first-info">
-          <p>Bom dia,</p>
-        </div>
-        <div class="second-info">
-          <p>{username}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="lateral-body-nav">
-    <ul>
-      <li><i class="fa fa-money" aria-hidden="true"></i> <span>Receitas</span></li>
-      <li><i class="fa fa-credit-card" aria-hidden="true"></i><span>Despesas</span></li>
-      <li><i class="fa fa-university" aria-hidden="true"></i><span>Contas</span></li>
-      <li style="margin-top:80px"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></li>
-    </ul>
-  </div>
-</div>
+
+<tag:menu-lateral></tag:menu-lateral>
+
+
 <div class="content">
   <div class="top-nav">
     <div class="top-left-side">
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - Finanças</h1>
+      <h1>PubFuture - FinanÃ§as</h1>
     </div>
     <div class="top-right-side">
     </div>
@@ -67,16 +49,16 @@
             <th>Data de Pagamento</th>
             <th>Data de Pagamento Esperado</th>
             <th>Tipo da Despesa</th>
-            <th>Instituição Financeira</th>
+            <th>InstituiÃ§Ã£o Financeira</th>
             <th>Conta a Debitar</th>
-            <th>Ações</th>
+            <th>AÃ§Ãµes</th>
           </tr>
 
           <tr>
             <td>R$ 839,23</td>
             <td></td>
             <td>10/02/2022</td>
-            <td>Educação</td>
+            <td>EducaÃ§Ã£o</td>
             <td>Nubank</td>
             <td>Conta Corrente</td>
             <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>

@@ -1,49 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%> 
+<%@ taglib tagdir="/WEB-INF/tags/" prefix="tag" %>
+
+
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="pt-br" >
 <head>
   <meta charset="UTF-8">
-  <title>PubFuture - Finanças</title>
+  <title>PubFuture - FinanÃ§as</title>
   <link rel='stylesheet' href='https://cdn.rawgit.com/picturepan2/spectre/846353cb/docs/dist/spectre.min.css'>
 <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
 <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<div class="lateral-nav">
-  <div class="lateral-top-nav">
-    <div class="user-info">
-      <div class="user-pic">
-        <div class="round-img">
-          <img src="https://avatars.githubusercontent.com/u/34714882?v=4">
-        </div>
-      </div>
-      <div class="user-desc">
-        <div class="first-info">
-          <p>Bom dia,</p>
-        </div>
-        <div class="second-info">
-          <p>{username}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="lateral-body-nav">
-    <ul>
-      <li><i class="fa fa-money" aria-hidden="true"></i> <span>Receitas</span></li>
-      <li><i class="fa fa-credit-card" aria-hidden="true"></i><span>Despesas</span></li>
-      <li><i class="fa fa-university" aria-hidden="true"></i><span>Contas</span></li>
-      <li style="margin-top:80px"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></li>
-    </ul>
-  </div>
-</div>
+
+<tag:menu-lateral></tag:menu-lateral>
+
+
 <div class="content">
   <div class="top-nav">
     <div class="top-left-side">
       <span class="menu-icon">
         <i class="fa fa-bars" aria-hidden="true"></i>
       </span>
-      <h1>PubFuture - Finanças</h1>
+      <h1>PubFuture - FinanÃ§as</h1>
     </div>
     <div class="top-right-side">
     </div>
@@ -82,7 +64,7 @@
                 </div>
 
                 <div class="form-group">
-                  <h6 style="margin-bottom:0px">Instituição Financeira e Conta a Receber:</h6>
+                  <h6 style="margin-bottom:0px">InstituiÃ§Ã£o Financeira e Conta a Receber:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>ItaÃº</option>
                     <option>Bradesco</option>
@@ -94,22 +76,22 @@
                   <select class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
-                    <option>Poupança</option>
+                    <option>PoupanÃ§a</option>
                   </select>
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
                   <h6 style="margin-bottom:0px">Tipo de Receita:</h6>
                   <select class="form-control input-login mx-auto" id="email" required="required">
-                    <option>Salário</option>
+                    <option>SalÃ¡rio</option>
                     <option>Presente</option>
-                    <option>Prêmio</option>
+                    <option>PrÃªmio</option>
                     <option>Outros</option>
                   </select>
                   <p class="help-block text-danger"></p>
                 </div>
                  
-                  <button class="botÃ£o salvar" >Salvar</button>
+                  <button class="botÃƒÂ£o salvar" >Salvar</button>
               </div> 
           </div>
       </form>

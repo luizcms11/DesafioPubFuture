@@ -78,6 +78,8 @@ body {
   background-color: #F6F6F6;
   width: 100%;
 }
+
+
 .lateral-nav {
   height: 100%;
   width: 300px;
@@ -134,7 +136,11 @@ body {
 .lateral-nav .lateral-body-nav {
   width: 100%;
   padding: 20px 0px;
+  text-decoration: none;
 }
+
+
+
 .lateral-nav .lateral-body-nav ul {
   list-style-type: none;
   padding: 0px;
@@ -146,7 +152,24 @@ body {
   cursor: pointer;
   padding: 20px;
   margin: 0px;
+  
 }
+
+a{
+  text-transform: uppercase;
+  color: #9698A0;
+  cursor: pointer;
+  padding: 20px;
+  margin: 0px;
+  text-decoration:none !important;
+  
+  
+}
+
+a:hover{
+	color: #9698A0;
+}
+
 .lateral-nav .lateral-body-nav ul li i {
   margin: 0px 20px;
 }
@@ -245,6 +268,7 @@ form input, textarea, select{
   min-height: 10rem;
 
 }
+
 
 
 form button{
@@ -380,9 +404,11 @@ table th, td{
   left:25%;
   -ms-transform: translateY(50%, -50%);
   transform: translateY(-50%, -50%);
-  
 
-  
+  border-color: #e4870d;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
   
 }
 
