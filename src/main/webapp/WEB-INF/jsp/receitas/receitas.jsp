@@ -55,16 +55,21 @@
             <th>Ações</th>
           </tr>
 
+		<c:forEach var="receitas" items="${receitas}">
+		
           <tr>
-            <td>R$ 839,23</td>
-            <td></td>
-            <td>10/02/2022</td>
-            <td>Reembolso de despesas</td>
-            <td>Itaú</td>
-            <td>Conta Corrente</td>
-            <td>Outros</td>
+            <td>${receitas.recebimento}</td>
+            <td>${receitas.datareceb}</td>
+            <td>${receitas.datarecebesperado}</td>
+            <td>${receitas.descricao}</td>
+            <td>${receitas.fin}</td>
+            <td>${receitas.conta}</td>
+            <td>${receitas.tiporeceita}</td>
             <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
           </tr>
+		
+		</c:forEach>
+		
         </table>
          
     </div>

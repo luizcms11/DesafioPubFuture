@@ -53,16 +53,24 @@
             <th>Conta a Debitar</th>
             <th>Ações</th>
           </tr>
-
-          <tr>
-            <td>R$ 839,23</td>
-            <td></td>
-            <td>10/02/2022</td>
-            <td>Educação</td>
-            <td>Nubank</td>
-            <td>Conta Corrente</td>
-            <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
-          </tr>
+			
+			<c:forEach var="despesas" items="${despesas}">
+			
+			
+			  <tr>
+	            <td>${despesas.valordespesa}</td>
+	            <td>${despesas.datapag}</td>
+	            <td>${despesas.datapagesperado}</td>
+	            <td>${despesas.tipodespesa}</td>
+	            <td>${despesas.fin}</td>
+	            <td>${despesas.conta}</td>
+	            <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
+	          <tr>
+			
+			
+			</c:forEach>
+                       
+         
         </table>
          
     </div>
