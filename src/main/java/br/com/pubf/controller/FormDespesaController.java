@@ -11,6 +11,7 @@ import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.interceptor.IncludeParameters;
 import br.com.caelum.vraptor.validator.Validator;
 import br.com.olimposistema.aipa.dao.DAO;
+import br.com.olimposistema.aipa.service.Util;
 import br.com.pubf.model.Despesas;
 
 @Controller
@@ -22,14 +23,19 @@ public class FormDespesaController {
 	@Inject Result result;
 	
 	@Get("")
-	public void formdespesa() {
+	public void formdespesa(Despesas despesas) {
+		if(Util.isNotNull(despesas) && Util.isPositivo(despesas.getId())){
+			Despesas despesaDoBanco = despesasDao.selectPorId(despesas);
+			result.include("despesas", despesaDoBanco);
+			
+		}
 		
 	}
 	
 	@IncludeParameters
 	@Post("salvaDespesas")
 	public void salvaDespesas(@Valid Despesas despesas) {
-		validator.onErrorRedirectTo(this).formdespesa();
+		validator.onErrorRedirectTo(this).formdespesa(despesas);
 		despesasDao.insertOrUpdate(despesas);
 		result.redirectTo(DespesasController.class).despesas();
 	}

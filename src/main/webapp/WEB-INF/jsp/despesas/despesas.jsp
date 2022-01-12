@@ -64,7 +64,8 @@
 	            <td>${despesas.tipodespesa}</td>
 	            <td>${despesas.fin}</td>
 	            <td>${despesas.conta}</td>
-	            <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
+	            <td><button onclick="window.location.href='formdespesa?despesas.id=${despesas.id}'" id="btnEditar" type="button" class="btn btn-success mb-3" ><i class="fa fa-pencil-square-o"></i></button> 
+	            <button onclick="window.location.href='deletadespesa/${despesas.id}'" id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
 	          <tr>
 			
 			

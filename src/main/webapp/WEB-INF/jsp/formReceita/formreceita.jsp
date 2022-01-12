@@ -36,44 +36,52 @@
 <section class="page-section" id="formreceita">
   <div class="container">
       <div class="text-center">
-          <h2 class="section-heading text-uppercase">Nova Receita/Editar Receita</h2>
+      
+      <c:if test="${despesas != null && despesas.getId()>0 }">
+      <h2 class="section-heading text-uppercase">Editar Receita</h2>
+      </c:if>
+      
+      <c:if test="${despesas == null || despesas.getId()<1 }">
+      <h2 class="section-heading text-uppercase">Nova Receita</h2>
+      </c:if>
+      
+      
+          
           
       </div>
       <form method="post" action="<c:url value="formreceita/salvaReceitas"/>">
+          <input type="hidden" name="receitas.id" value="${receitas.id}"/>
+           <input type="hidden" name="receitas.ativo" value="${receitas.isAtivo()}"/>
+          
           <div class="row justify-content-md-center mb-5 text-center">
               <div class="col-md-12 align-self-center text-center">
                   
                 <div class="form-group input-login mx-auto">
-                    <input name="receitas.recebimento" class="form-control money" id="valor" type="tel" placeholder="Valor em R$*" required="required" data-validation-required-message="Digite o Valor da Receita." />                            
+                    <input name="receitas.recebimento" value="${receitas.recebimento}" class="form-control money" id="valor" type="tel" placeholder="Valor em R$*" required="required" data-validation-required-message="Digite o Valor da Receita." />                            
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group input-login mx-auto">
                   <h6 style="margin-bottom:0px">Data de Recebimento:</h6>
-                    <input name="receitas.datareceb" class="form-control date-br" id="valor" type="date" placeholder="Data Recebimento"/>
+                    <input name="receitas.datareceb" value="${receitas.datareceb}" class="form-control date-br" id="valor" type="date" placeholder="Data Recebimento"/>
                     <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group input-login mx-auto">
                   <h6 style="margin-bottom:0px">Data de Recebimento Esperado:</h6>
-                    <input name="receitas.datarecebesperado" class="form-control date-br" id="valor" type="date" placeholder="Data Recebimento Esperado" required="required" data-validation-required-message="Digite a data de Recebimento Esperado" />
+                    <input name="receitas.datarecebesperado" value="${receitas.datarecebesperado}" class="form-control date-br" id="valor" type="date" placeholder="Data Recebimento Esperado" required="required" data-validation-required-message="Digite a data de Recebimento Esperado" />
                     <p class="help-block text-danger"></p>
                   </div>
                 <div class="form-group input-login mx-auto">
-                    <textarea name="receitas.descricao" class="form-control" placeholder="Descreva a Receita"></textarea>
+                    <textarea name="receitas.descricao" class="form-control" placeholder="Descreva a Receita">${receitas.descricao}</textarea>
                     
                     <p class="help-block text-danger"></p>
                 </div>
 
                 <div class="form-group">
                   <h6 style="margin-bottom:0px">Instituição Financeira e Conta a Receber:</h6>
-                  <select name="receitas.fin" class="form-control input-login mx-auto" id="email" required="required">
-                    <option>Itaú</option>
-                    <option>Bradesco</option>
-                    <option>Santander</option>
-                    <option>Nubank</option>
-                  </select>
-                  <p class="help-block text-danger"></p>
+                  <input name="receitas.fin" value="${receitas.fin}" class="form-control input-login mx-auto" id="email" required="required">
+                   <p class="help-block text-danger"></p>
 
-                  <select name="receitas.conta" class="form-control input-login mx-auto" id="email" required="required">
+                  <select name="receitas.conta" value="${receitas.conta}" class="form-control input-login mx-auto" id="email" required="required">
                     <option>Carteira</option>
                     <option>Conta Corrente</option>
                     <option>Poupança</option>
@@ -82,7 +90,7 @@
                 </div>
                 <div class="form-group">
                   <h6 style="margin-bottom:0px">Tipo de Receita:</h6>
-                  <select name="receitas.tiporeceita" class="form-control input-login mx-auto" id="email" required="required">
+                  <select name="receitas.tiporeceita" value="${receitas.tiporeceita}" class="form-control input-login mx-auto" id="email" required="required">
                     <option>Salário</option>
                     <option>Presente</option>
                     <option>Prêmio</option>

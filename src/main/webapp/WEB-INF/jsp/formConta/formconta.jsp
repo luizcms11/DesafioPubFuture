@@ -35,10 +35,23 @@
 <section class="page-section" id="formConta">
   <div class="container">
       <div class="text-center">
-          <h2 class="section-heading text-uppercase">Nova Conta/Editar Conta</h2>
+      
+      <c:if test="${contas != null && contas.getId()>0 }">
+      <h2 class="section-heading text-uppercase">Editar Conta</h2>
+      </c:if>
+      
+      <c:if test="${contas == null || contas.getId()<1 }">
+      <h2 class="section-heading text-uppercase">Nova Conta</h2>
+      </c:if>
+      
+          
           
       </div>
       <form method="post" action="<c:url value="formconta/salvaContas"/>">
+          <input type="hidden" name="contas.id" value="${contas.id}"/>
+          <input type="hidden" name="contas.ativo" value="${contas.isAtivo()}"/>
+          
+          
           <div class="row justify-content-md-center mb-5 text-center">
               <div class="col-md-12 align-self-center text-center">
                   

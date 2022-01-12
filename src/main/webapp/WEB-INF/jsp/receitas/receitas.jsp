@@ -65,7 +65,8 @@
             <td>${receitas.fin}</td>
             <td>${receitas.conta}</td>
             <td>${receitas.tiporeceita}</td>
-            <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
+            <td><button onclick="window.location.href='formreceita?receitas.id=${receitas.id}'" id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> 
+            <button onclick="window.location.href='deletareceita/${receitas.id}'" id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button></td>
           </tr>
 		
 		</c:forEach>

@@ -59,7 +59,9 @@
             <td>${contas.fin}</td>
             <td>${contas.conta}</td>
             <td>${contas.saldo }</td>
-            <td><button id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button> <button id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button> <button id="btnTransferir" type="button" class="btn btn-success mb-3"><i class="fa fa-exchange"></i></button></td>
+            <td><button onclick="window.location.href='formconta?contas.id=${contas.id}'" id="btnEditar" type="button" class="btn btn-success mb-3"><i class="fa fa-pencil-square-o"></i></button>
+             <button onclick="window.location.href='deletaconta/${contas.id}'" id="btnDeletar" type="button" class="btn btn-success mb-3"><i class="fa fa-trash-o"  ></i></button> 
+             <button id="btnTransferir" type="button" class="btn btn-success mb-3"><i class="fa fa-exchange"></i></button></td>
            
           </tr>
 		
