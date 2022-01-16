@@ -1,5 +1,4 @@
 
-********README.MD*******
 # Desafio PubFuture
 
 Este projeto foi desenvolvido para o desafio PubFuture com o objetivo de criar um sistema para gerenciamento de finanças pessoais.
