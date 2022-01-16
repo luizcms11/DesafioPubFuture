@@ -20,7 +20,7 @@ public class CadastroController {
 	@Inject Result result;
 	@Inject Validator validator;
 	
-	@Get("") 
+	@Get("")
 	public void cadastro() {
 		
 	}
