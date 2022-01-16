@@ -11,7 +11,7 @@
       </div>
       <div class="user-desc">
         <div class="first-info">
-          <p>Bom dia,</p>
+          <p>Olá,</p>
         </div>
         <div class="second-info">
           ${usuarioLogado.getNome() }
@@ -24,7 +24,7 @@
       <li><a href="<c:url value="receitas"/>"><i class="fa fa-money" aria-hidden="true"></i><span>Receitas</span></a></li>
       <li><a href="<c:url value="despesas"/>"><i class="fa fa-credit-card" aria-hidden="true"></i><span>Despesas</span></a></li>
       <li><a href="<c:url value="contas"/>"><i class="fa fa-university" aria-hidden="true"></i><span>Contas</span></a></li>
-      <li style="margin-top:80px"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></li>
+      <li style="margin-top:80px"><a href="<c:url value="logout"/>"><i class="fa fa-sign-out" aria-hidden="true"></i><span>Sair</span></a></li>
     </ul>
   </div>
 </div>
