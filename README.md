@@ -12,7 +12,7 @@ Este projeto foi desenvolvido para o desafio PubFuture com o objetivo de criar u
 * PostgreSQL versão 9.6.19
 * IDE Eclipse IDE 2021-12
 * Java versão 17.0.1
-*Tomcat 9.0
+* Tomcat 9.0
 
 </br>
 </br>
