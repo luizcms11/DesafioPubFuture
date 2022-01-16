@@ -22,11 +22,19 @@
       <div class="masthead-subheading"><h1>Bem Vindo à  PubFuture Finanças!</h1></div>
       <div class="masthead-heading text-uppercase" id="login-box"><h6>Faça seu Cadastro:</h6></div>
       
+      <c:if test="${not empty erros}">
+      	<div class="alert alert-danger" role="alert">
+      	<c:forEach var="error" items="${errors}">
+      		${error.message}<br/>
+      	</c:forEach>
+      	</div>
+      </c:if>
+      
       <form method="post" action="<c:url value="cadastro/salvaUsuario"/>">
           <div class="row justify-content-md-center mb-5 text-center">
               <div class="col-md-12 align-self-center text-center">
               	  <div class="form-group input-login mx-auto">
-                      <input name="usuario.nome" class="form-control" id="nome" placeholder="Nome *" required="required" data-validation-required-message="Insira seu nome." />
+                      <input name="usuario.nome" class="form-control" id="nome" placeholder="Nome *" required="required"  data-validation-required-message="Insira seu nome." />
                       <p class="help-block text-danger"></p>
                   </div>
                   <div class="form-group input-login mx-auto">

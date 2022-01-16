@@ -8,6 +8,7 @@ import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Result;
 import br.com.olimposistema.aipa.dao.DAO;
+import br.com.pubf.interceptors.SomenteLogado;
 import br.com.pubf.model.Despesas;
 
 @Controller
@@ -17,7 +18,7 @@ public class DespesasController {
 	@Inject Result result;
 	@Inject DAO<Despesas> despesasDao;
 	
-	@Get("")
+	@Get("") @SomenteLogado
 	public void despesas() {
 		List<Despesas> despesas = despesasDao.selectAll();
 		result.include("despesas", despesas);

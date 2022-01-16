@@ -223,6 +223,11 @@ a:hover{
 .content.open {
   margin-left: 120px;
 }
+
+.content h1{
+	font-size: 4vw;
+}
+
 .card {
   width: auto;
   height: 100%;
@@ -297,6 +302,8 @@ form button:hover{
 table th, td{
   text-align: center
 }
+
+
 
 #btnAdicionarDespesa{
   width: 20%;
@@ -405,10 +412,7 @@ table th, td{
   -ms-transform: translateY(50%, -50%);
   transform: translateY(-50%, -50%);
 
-  border-color: #e4870d;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
+  
   
 }
 
@@ -461,6 +465,21 @@ table th, td{
     
 }
 
+table{
+	width:100%;
+	text-align: center;
+	border-collapse:collapse;
+
+}
+
+th, td{
+	border-bottom: 1px solid #ddd;
+}
+
+tr:hover{
+	background-color: #ffffff;
+}
+	
 
 
 @media (max-width: 960px) {

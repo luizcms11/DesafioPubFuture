@@ -7,6 +7,7 @@ import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Result;
 import br.com.olimposistema.aipa.dao.DAO;
+import br.com.pubf.interceptors.SomenteLogado;
 import br.com.pubf.model.Despesas;
 
 @Controller
@@ -16,7 +17,7 @@ public class DeletaDespesaController {
 	@Inject DAO<Despesas> despesasDao;
 	@Inject Result result;
 	
-	@Get("/{despesas.id}")
+	@Get("/{despesas.id}") @SomenteLogado
 	public void deletadespesa(Despesas despesas) {
 		
 		despesasDao.delete(despesas);

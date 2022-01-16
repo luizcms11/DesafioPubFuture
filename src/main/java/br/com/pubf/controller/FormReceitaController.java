@@ -12,6 +12,7 @@ import br.com.caelum.vraptor.interceptor.IncludeParameters;
 import br.com.caelum.vraptor.validator.Validator;
 import br.com.olimposistema.aipa.dao.DAO;
 import br.com.olimposistema.aipa.service.Util;
+import br.com.pubf.interceptors.SomenteLogado;
 import br.com.pubf.model.Receitas;
 
 @Controller
@@ -22,7 +23,7 @@ public class FormReceitaController {
 	@Inject DAO<Receitas> receitasDao;
 	@Inject Result result;
 	
-	@Get("")
+	@Get("") @SomenteLogado
 	public void formreceita(Receitas receitas) {
 		if(Util.isNotNull(receitas) && Util.isPositivo(receitas.getId())){
 			Receitas receitaDoBanco = receitasDao.selectPorId(receitas);

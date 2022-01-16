@@ -2,9 +2,7 @@ package br.com.pubf.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.validation.constraints.Size;
+
 
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
@@ -15,13 +13,13 @@ import br.com.olimposistema.aipa.model.Model;
 public class Usuario extends Model{
 	
 		
-		@NotEmpty @Size(min = 3, max = 100, message = "{usuario.nome.size}")
+		@NotEmpty 
 		private String nome;
 		
 		@NotEmpty @Email @Column(unique = true)
 		private String email;
 		
-		@NotEmpty @Size(min = 6, max = 20, message = "{usuario.senha.size}")
+		@NotEmpty 
 		private String senha;
 		
 		public String getNome() {

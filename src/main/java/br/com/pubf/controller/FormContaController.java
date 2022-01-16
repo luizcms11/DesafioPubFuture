@@ -14,6 +14,7 @@ import br.com.caelum.vraptor.interceptor.IncludeParameters;
 import br.com.caelum.vraptor.validator.Validator;
 import br.com.olimposistema.aipa.dao.DAO;
 import br.com.olimposistema.aipa.service.Util;
+import br.com.pubf.interceptors.SomenteLogado;
 import br.com.pubf.model.Contas;
 
 
@@ -25,7 +26,7 @@ public class FormContaController {
 	@Inject DAO<Contas> contasDao;
 	@Inject Result result;
 	
-	@Get("")
+	@Get("") @SomenteLogado
 	public void formconta(Contas contas) {
 		if(Util.isNotNull(contas) && Util.isPositivo(contas.getId())) {
 			Contas contasDoBanco = contasDao.selectPorId(contas);

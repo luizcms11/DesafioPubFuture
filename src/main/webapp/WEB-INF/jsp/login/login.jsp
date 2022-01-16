@@ -44,6 +44,7 @@
               
           </div>
       <button  type="submit" class="btnLogin">Login</button>
+      <a onclick="window.location.href='cadastro'" >Cadastre-se</a>
       </form>
   </div>
 </header>
